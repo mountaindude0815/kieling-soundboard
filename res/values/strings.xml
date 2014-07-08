@@ -4,5 +4,8 @@
     <string name="app_name">Kieling Soundboard</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_swipe_test">SwipeTestActivity</string>
+    <string name="title_section1">Kieling</string>
+    <string name="title_section2">Jeden gegen Jeder</string>
 
 </resources>
