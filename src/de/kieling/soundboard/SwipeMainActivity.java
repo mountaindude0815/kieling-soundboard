@@ -111,16 +111,12 @@ public class SwipeMainActivity extends FragmentActivity implements
 					ARG_SECTION_NUMBER));
 			mLayout = (LinearLayout) rootView.findViewById(R.id.buttonLayout);
 
-			// Add buttons to view
-			if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) {
-
-				mButtons = new Button[mSoundMgr.getSoundCount()];
-				for (int i = 0; i < mSoundMgr.getSoundCount(); i++) {
-					mButtons[i] = new Button(mContext);
-					mButtons[i].setText(mSoundMgr.getSoundName(i));
-					mButtons[i].setOnClickListener(this);
-					mLayout.addView(mButtons[i]);
-				}
+			mButtons = new Button[mSoundMgr.getSoundCount()];
+			for (int i = 0; i < mSoundMgr.getSoundCount(); i++) {
+				mButtons[i] = new Button(mContext);
+				mButtons[i].setText(mSoundMgr.getSoundName(i));
+				mButtons[i].setOnClickListener(this);
+				mLayout.addView(mButtons[i]);
 			}
 
 			return rootView;

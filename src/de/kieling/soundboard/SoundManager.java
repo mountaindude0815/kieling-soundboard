@@ -61,6 +61,19 @@ public class SoundManager {
 		}
 		// Load JEDEN GEGEN JEDER sounds
 		else if (sounds == JEDEN_GEGEN_JEDER) {
+			mIndexList.add(new SingleSound(R.raw.fuck_lol_mom, "Fuck. Lol. Mom."));
+			mIndexList.add(new SingleSound(R.raw.viev, "Viev"));
+			mIndexList.add(new SingleSound(R.raw.sus, "Sus"));
+			mIndexList.add(new SingleSound(R.raw.aaahhhmm, "Äähhmm"));
+			mIndexList.add(new SingleSound(R.raw.stimmt_nicht, "Stimmt... nicht!"));
+			mIndexList.add(new SingleSound(R.raw.wie_viele_quatten, "Wie viele Quatten hat ein Quant?"));
+			mIndexList.add(new SingleSound(R.raw.wann_gefriert_gouda, "Bei welcher Temparatur gefriert Gouda?"));
+			mIndexList.add(new SingleSound(R.raw.micheal_jackson, "Micheal Jackson"));
+			mIndexList.add(new SingleSound(R.raw.wie, "Wie?"));
+			mIndexList.add(new SingleSound(R.raw.micheal_jordan, "Micheal Jordan"));
+			mIndexList.add(new SingleSound(R.raw.jasmin_scheisst_gerne, "Jasmin scheißt gerne..."));
+			mIndexList.add(new SingleSound(R.raw.klappe_du_arschloch, "Klappe du Arschloch!"));
+			mIndexList.add(new SingleSound(R.raw.fickmuskel_mit_sack, "Fickmuskel mit Sack"));
 		}
 	}
 
