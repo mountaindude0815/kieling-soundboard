@@ -81,7 +81,15 @@ public class SoundManager {
 	 * @param index
 	 */
 	public void playSound(int index) {
-		MediaPlayer.create(mContext, mIndexList.get(index).getID()).start();
+		MediaPlayer mp = MediaPlayer.create(mContext, mIndexList.get(index).getID());
+		mp.start();
+		mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+			
+			@Override
+			public void onCompletion(MediaPlayer mp) {
+				mp.release();
+			}
+		});
 	}
 
 	/**
